@@ -12,6 +12,10 @@ std::string wt_punct(std::string s) {
     std::string l = "";
     short len = s.length() - 1;
 
+    if (s == ">>" or s == "<<"){
+        return " ";
+    }
+
     while (ispunct(s[len])){
         len--;
     }

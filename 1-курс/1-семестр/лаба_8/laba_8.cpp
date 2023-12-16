@@ -41,12 +41,14 @@ int main()
     cout << "Введите номер варианта: ";
     cin >> var;
     
-    if (var < 1 or var > 7) {
+    if (var < 4 or var > 6) {
         var = 5;
     }
     cout << "Введите размер массива K: ";
     cin >> K;
-
+    if (K < 0){
+        return -1;
+    }
     A = (int*)malloc(K * sizeof(int));
     for (int i = 0; i < K; i++) {
         A[i] = i;
@@ -55,6 +57,10 @@ int main()
 
     cout << "Введите S: ";
     cin >> S;
+
+    if (S + K < 0){
+        return -2;
+    }
 
     A = (int*)realloc(A, (K + S) * sizeof(int));
     if (S < 0) {
@@ -161,7 +167,7 @@ int main()
     output(B, M, N);
 
     // матричная норма 2-матрицы
-    int norm_2 = matrix_norm(B, N, M);
+    int norm_2 = matrix_norm(B, M, N);
     cout << "Матричная норма транспонированной матрицы = " << norm_2 << endl;
 
     if (norm_2 > norm_1)

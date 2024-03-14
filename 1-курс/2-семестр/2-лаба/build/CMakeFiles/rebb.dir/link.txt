@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/rebb.dir/2_laba.cpp.o -o rebb 

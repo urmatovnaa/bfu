@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/rebb.dir/inc/Parallelogram.cpp.o CMakeFiles/rebb.dir/inc/Rectangle.cpp.o CMakeFiles/rebb.dir/inc/Shape.cpp.o CMakeFiles/rebb.dir/main.cpp.o -o rebb
